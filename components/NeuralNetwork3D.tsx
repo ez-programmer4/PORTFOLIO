@@ -336,8 +336,10 @@ export default function NeuralNetwork3D({ className = "" }: { className?: string
         <pointLight position={[-10, -10, -10]} intensity={0.6} color="#8b5cf6" />
         <directionalLight position={[0, 0, 10]} intensity={0.5} color="#06b6d4" />
         
-        <NeuralNetworkMesh mousePosition={mousePosition} />
+        <CircuitBoard mousePosition={mousePosition} />
         <DataStream mousePosition={mousePosition} />
+        <DataCubes mousePosition={mousePosition} />
+        <ServerRacks mousePosition={mousePosition} />
       </Canvas>
     </div>
   )
