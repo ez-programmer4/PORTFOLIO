@@ -7,6 +7,8 @@ import Navigation from '@/components/Navigation'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
+  // Set a metadataBase for absolute URLs (OG/Twitter) during static export
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://example.com'),
   title: 'Ezedin Ebrahim - Software Developer',
   description: 'Personal website of Ezedin Ebrahim, a passionate software developer specializing in modern web technologies.',
   keywords: 'software developer, web development, programming, portfolio',
